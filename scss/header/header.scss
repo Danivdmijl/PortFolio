@@ -1,24 +1,31 @@
-.header{
+.header {
     height: 8rem;
     min-width: 100%;
-    background: linear-gradient(to right, #87CBB9, #B9EDDD);
+    background: linear-gradient(to bottom, #87CBB9, #B9EDDD);
     padding-right: 5rem;
     text-align: center;
 
-    &__ul{
+    &__ul {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         gap: 2rem;
         list-style-type: none;
         height: 100%;
-   
-     &__li{
-        font-family: Arial, sans-serif;
-        font-size: 2rem;
-        color: white;
-        text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
-    }
-    
+
+        &__li {
+            font-family: Arial, sans-serif;
+            font-size: 2rem;
+            color: white;
+            text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+
+            &__a {
+                font-family: Arial, sans-serif;
+                font-size: 2rem;
+                color: white;
+                text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+            }
+        }
+
     }
 }

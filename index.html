@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortoFolio Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
@@ -13,26 +17,113 @@
 <body>
     <header class="header">
         <ul class="header__ul">
-            <li class="header__ul__li">About</li>
+            <li class="header__ul__li"><a class="header__ul__li__a" href="#aboutme">About Me</a></li>
             <li class="header__ul__li">Projects</li>
             <li class="header__ul__li">Contact</li>
         </ul>
     </header>
     <main>
+        <!-- First Section -->
         <section class="frontinfo">
             <div class="frontinfo__container">
                 <h2>Hello I'm Dani van der Mijl</h2>
                 <p>I'm a Front-End developer from The Netherlands</p>
             </div>
-            <figure class="frontinfo__icon"></figure>
+            <img class="frontinfo__icon" src="./img/blurtemplate.jpg" alt="">
         </section>
-        <section class="aboutme">
+
+        <!-- Second Section -->
+        <section class="aboutme" id="aboutme">
             <article class="aboutme__Title">
-                <h2>About Me</h2>
-                <p>Here you will find more Information. About me, what I do, and my current skills
-                    in Software Development.</p>
+                <div class="aboutme__container">
+                    <h2 class="aboutme__h2">About Me</h2>
+                    <p class="aboutme__p">Here you will find more Information. About me, what I do, and my current
+                        skills
+                        in Software Development.</p>
+                </div>
             </article>
         </section>
+
+        <!-- third section -->
+        <section class="myskills">
+            <article class="myskills__left">
+                <h2>Get to known me!</h2>
+                <p class="myskills__left__h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                    adipisci ut accusamus, perspiciatis amet tempora odit recusandae officia ullam repellendus
+                    consectetur itaque quod est consequatur? Error voluptate necessitatibus distinctio! Nam! <br></br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur adipisci ut accusamus,
+                    perspiciatis amet tempora odit recusandae officia ullam repellendus consectetur itaque quod est
+                    consequatur? Error voluptate necessitatibus distinctio! Nam!shd gajdgjs gd gsgdvvd gsadj
+                    jgajdadsdaddahbjdhbjdhjbsahbjdashbjdhshdhdhbash </p>
+                <button class="myskills__left__button">Contact</button>
+            </article>
+            <article class="myskills__right">
+                <h2>My Skills</h2>
+                <ul class="myskills__right__container">
+                    <li class="myskills__right__container__button">Tering</li>
+                    <li class="myskills__right__container__button">Tering</li>
+                    <li class="myskills__right__container__button">Tering</li>
+                    <li class="myskills__right__container__button">Tering</li>
+                    <li class="myskills__right__container__button">Tering</li>
+                    <li class="myskills__right__container__button">Tering</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 4th section -->
+        <section class="projects">
+            <article class="card">
+                <img class="card-image" src="img/picture.jpg" alt="Project Image">
+                <h2 class="card-title">Succes Diary</h2>
+                <p class="card-description">The success diary was made for a company called Doesburg Coaching. This
+                    company takes care of customers who have problems with, for example, stress or other mental
+                    problems. The Success Diary helps the company to help people by keeping track of success moments in
+                    a digital and friendly way.</p>
+                <a class="card-button" href="https://danivdmijl.github.io/Succes-Dagboek/">View Project</a>
+            </article>
+            <article class="card">
+                <img class="card-image" src="img/picture.jpg" alt="Project Image">
+                <h2 class="card-title">Succes Diary</h2>
+                <p class="card-description">The success diary was made for a company called Doesburg Coaching. This
+                    company takes care of customers who have problems with, for example, stress or other mental
+                    problems. The Success Diary helps the company to help people by keeping track of success moments in
+                    a digital and friendly way.</p>
+                <a class="card-button" href="https://danivdmijl.github.io/Succes-Dagboek/">View Project</a>
+            </article>
+            <article class="card">
+                <img class="card-image" src="img/picture.jpg" alt="Project Image">
+                <h2 class="card-title">Succes Diary</h2>
+                <p class="card-description">The success diary was made for a company called Doesburg Coaching. This
+                    company takes care of customers who have problems with, for example, stress or other mental
+                    problems. The Success Diary helps the company to help people by keeping track of success moments in
+                    a digital and friendly way.</p>
+                <a class="card-button" href="https://danivdmijl.github.io/Succes-Dagboek/">View Project</a>
+            </article>
+            <article class="card">
+                <img class="card-image" src="img/picture.jpg" alt="Project Image">
+                <h2 class="card-title">Succes Diary</h2>
+                <p class="card-description">The success diary was made for a company called Doesburg Coaching. This
+                    company takes care of customers who have problems with, for example, stress or other mental
+                    problems. The Success Diary helps the company to help people by keeping track of success moments in
+                    a digital and friendly way.</p>
+                <a class="card-button" href="https://danivdmijl.github.io/Succes-Dagboek/">View Project</a>
+            </article>
+        </section>
+
+        <!-- 5th Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact__container">
+                <img class="contact__container__icon" src="./img/linkeding.webp" alt="">
+                <img class="contact__container__icon" src="./img/linkeding.webp" alt="">
+                <img class="contact__container__icon" src="./img/linkeding.webp" alt="">
+                <img class="contact__container__icon" src="./img/linkeding.webp" alt="">
+                <img class="contact__container__icon" src="./img/linkeding.webp" alt="">
+                <img class="contact__container__icon" src="./img/linkeding.webp" alt="">
+            </div>
+        </section>
+
+
     </main>
 </body>
 

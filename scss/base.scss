@@ -1,9 +1,16 @@
 @use "./abstracts/colors";
 
 body{
+    height: 100%;
+    font-family: 'Geologica', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 main{
-    height: 100vh;
-    background: blue;
+    height: 100%;
+    padding: 5rem;
+    background: linear-gradient(#B9EDDD, 50%, #D7C0AE);
+
 }
