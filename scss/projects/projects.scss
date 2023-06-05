@@ -4,6 +4,15 @@
     justify-content: center;
     gap: 7rem;
     flex-wrap: wrap;
+    flex-direction: column;
+
+    &__container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7rem;
+      flex-wrap: wrap;
+    }
 }
 
 .card {
