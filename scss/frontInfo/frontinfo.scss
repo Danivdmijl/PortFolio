@@ -1,10 +1,9 @@
 .frontinfo{
-    height: 80rem;
-    width: 100%;
+    height: 86vh;
+    width: 93%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
 
     &__container{
         display: flex;
@@ -12,12 +11,19 @@
         justify-content: center;
         flex-direction: column;
         gap: 2rem;
+
+        &__h2{
+            font-size: 800%;
+        }
     }
 
     &__icon{
-        width: 23rem;
-        height: 23rem;
+        min-width: 46rem;
+        min-height: 46rem;
+        max-width: 46rem;
+        max-height: 46rem;
         border: dashed 0.5rem black;
         border-radius: 50%;
+        object-fit: cover;
     }
 }

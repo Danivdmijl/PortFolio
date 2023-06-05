@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -56,12 +57,11 @@ main {
 }
 
 .frontinfo {
-  height: 80rem;
-  width: 100%;
+  height: 86vh;
+  width: 93%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
 }
 .frontinfo__container {
   display: flex;
@@ -70,11 +70,17 @@ main {
   flex-direction: column;
   gap: 2rem;
 }
+.frontinfo__container__h2 {
+  font-size: 800%;
+}
 .frontinfo__icon {
-  width: 23rem;
-  height: 23rem;
+  min-width: 46rem;
+  min-height: 46rem;
+  max-width: 46rem;
+  max-height: 46rem;
   border: dashed 0.5rem black;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .aboutme {
@@ -117,8 +123,9 @@ main {
 }
 .myskills__left__button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff4081;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: #e7618e;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -131,7 +138,7 @@ main {
   transition: background-color 0.3s ease;
 }
 .myskills__left__button:Hover {
-  background-color: #f50057;
+  background-color: #f04380;
 }
 .myskills__right {
   height: 100%;
@@ -152,20 +159,17 @@ main {
 .myskills__right__container__button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff4081;
+  background-color: #e7618e;
   color: white;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
+  width: 10rem;
   border: none;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
   transition: background-color 0.3s ease;
-}
-.myskills__right__container__button:hover {
-  background-color: #f50057;
 }
 
 .projects {
@@ -176,6 +180,7 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
 }
+
 .projects__container {
   display: flex;
   align-items: center;
@@ -219,7 +224,7 @@ main {
 .card-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #4CAF50;
+  background-color: #e7618e;
   color: white;
   text-decoration: none;
   border-radius: 0.4rem;
@@ -227,7 +232,7 @@ main {
 }
 
 .card-button:hover {
-  background-color: #45a049;
+  background-color: #f04380;
 }
 
 .contact {
@@ -249,6 +254,106 @@ main {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
+}
+
+.scroll-button {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 10rem;
+  height: 6.4%;
+  display: flex;
+  z-index: 9999;
+  background-color: #e7618e;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.scroll-button:hover {
+  background-color: #e7618e;
+  transform: scale(1.1);
+}
+.scroll-buttoni {
+  display: block;
+}
+.scroll-buttoni::before {
+  content: "↑";
+}
+
+@media only screen and (max-width: 84.375rem) {
+  .frontinfo__container__h2 {
+    font-size: 300%;
+  }
+  .aboutme {
+    height: 25rem;
+  }
+  .myskills {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 4rem;
+  }
+  .myskills__right {
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+  }
+  .contact {
+    margin-top: 10rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6rem;
+    flex-wrap: wrap;
+  }
+  .contact__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .contact__container__icon {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+  .card {
+    width: 40rem;
+  }
+  .projects,
+  .projects__container {
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 41.75rem) {
+  .frontinfo__container__h2 {
+    font-size: 100%;
+  }
+  .frontinfo__icon {
+    min-width: 26rem;
+    min-height: 26rem;
+    max-width: 26rem;
+    max-height: 26rem;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
