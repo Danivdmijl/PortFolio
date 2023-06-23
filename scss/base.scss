@@ -5,6 +5,25 @@ body{
     font-family: 'Geologica', sans-serif;
 }
 
+.KanaoBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #BF7AA0, 60%, #D9B6A3);
+    padding: 4rem;
+
+}
+
+.projectBody{
+    background: linear-gradient(#B9EDDD, 50%, #D7C0AE);
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 html{
     scroll-behavior: smooth;
 }
