@@ -1,4 +1,5 @@
 @use "../frontInfo/frontinfo.scss";
+@use "../aboutme/aboutme.scss";
 
 @media only screen and (max-width: 84.375rem) {
 
@@ -12,6 +13,7 @@
 
     .aboutme{
         height: 25rem;
+        padding-bottom: 30rem;
     }
 
 
@@ -67,9 +69,13 @@
       }
   }
 
+@media only screen and (max-width: 66.5625rem){
+    .aboutme{
+        padding-bottom: 40rem;
+    }
+}
 
-
-  @media only screen and (max-width: 41.75rem){
+  @media only screen and (max-width: 45.625rem){
     .frontinfo{
     
         &__container{
@@ -85,6 +91,10 @@
             max-width: 26rem;
             max-height: 26rem;
         }
+    }
+
+    .aboutme{
+        padding-bottom: 50rem;
     }
 
     .header {
