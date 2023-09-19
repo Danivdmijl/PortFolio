@@ -88,7 +88,38 @@
   }
 
   .section2Modal{
-    background: yellow;
     height: 99%;
     width: 47%;
+
+    &__top{
+      padding-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &__bottom{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+      width: 100%;
+      flex-direction: column;
+    }
   }
+
+  .sectionModal__img{
+    width: 15rem;
+    height: 15rem;
+  }
+  
+.sectionModal__img--container{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-top: 6rem;
+  flex-wrap: wrap;
+}
