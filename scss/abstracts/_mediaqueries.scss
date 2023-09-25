@@ -1,23 +1,24 @@
 @use "../frontInfo/frontinfo.scss";
 @use "../aboutme/aboutme.scss";
+@use "../modal/modal.scss";
 
 @media only screen and (max-width: 84.375rem) {
 
-    .frontinfo{
-        &__container{
-            &__h2{
+    .frontinfo {
+        &__container {
+            &__h2 {
                 font-size: 300%;
             }
         }
     }
 
-    .aboutme{
+    .aboutme {
         height: 25rem;
         padding-bottom: 30rem;
     }
 
 
-    .myskills{
+    .myskills {
         width: 100%;
         height: 100%;
         display: flex;
@@ -25,16 +26,16 @@
         align-items: center;
         justify-items: center;
         gap: 4rem;
-    
-        &__right{
+
+        &__right {
             margin-top: 11rem;
             margin-bottom: 11rem;
         }
     }
 
-    .contact{
+    .contact {
         margin-top: 10rem;
-        width: 100%;    
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -42,8 +43,8 @@
         flex-direction: column;
         gap: 6rem;
         flex-wrap: wrap;
-    
-        &__container{
+
+        &__container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,7 +52,8 @@
             height: 100%;
             width: 100%;
             flex-wrap: wrap;
-            &__icon{
+
+            &__icon {
                 width: 20rem;
                 height: 20rem;
                 border-radius: 50%;
@@ -61,31 +63,31 @@
 
     .card {
         width: 40rem;
-      }
-    
-      .projects,
-      .projects__container {
-        gap: 3rem;
-      }
-  }
+    }
 
-@media only screen and (max-width: 66.5625rem){
-    .aboutme{
+    .projects,
+    .projects__container {
+        gap: 3rem;
+    }
+}
+
+@media only screen and (max-width: 66.5625rem) {
+    .aboutme {
         padding-bottom: 40rem;
     }
 }
 
-  @media only screen and (max-width: 45.625rem){
-    .frontinfo{
-    
-        &__container{
-    
-            &__h2{
+@media only screen and (max-width: 45.625rem) {
+    .frontinfo {
+
+        &__container {
+
+            &__h2 {
                 font-size: 100%;
             }
         }
-    
-        &__icon{
+
+        &__icon {
             min-width: 26rem;
             min-height: 26rem;
             max-width: 26rem;
@@ -93,8 +95,8 @@
         }
     }
 
-    .aboutme{
-        padding-bottom: 50rem;
+    .aboutme {
+        padding-bottom: 60rem;
     }
 
     .header {
@@ -103,4 +105,106 @@
         justify-content: center;
     }
 
-  }
+}
+
+
+@media only screen and (max-width: 35.25rem) {
+    .frontinfo {
+        flex-direction: column;
+
+
+        &__container {
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 6rem;
+            gap: 2rem;
+
+            &__h2 {
+                font-size: 300%;
+            }
+        }
+    }
+
+    .aboutme {
+        &__h2 {
+            font-size: 200%;
+        }
+
+        &__p {
+            font-weight: 500;
+        }
+    }
+
+    .header {
+        width: 100%;
+
+        &__ul {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 31.5rem) {
+    .aboutme {
+        padding-bottom: 85rem;
+
+        &__p {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .myskills {
+        &__left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+
+            &__h2 {
+                text-align: center;
+                width: 120%;
+            }
+
+            &__p {
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }
+
+    .projects {
+        &__container {
+            width: 90%;
+        }
+
+        &__h2 {
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+
+// queries MODAL
+
+
+@media only screen and (max-width: 52.3125rem) {
+    .sectionModal__img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 38.375) {
+    .section1Modal__bottom__socialIconsCover--img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
