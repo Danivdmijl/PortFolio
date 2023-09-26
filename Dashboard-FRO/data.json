@@ -1,0 +1,28 @@
+[
+  {
+    "label": "PlayStation",
+    "data": 10000,
+    "color": "FF6B6B"
+  },
+  {
+    "label": "Gamecube",
+    "data": 5000,
+    "color": "FFD93D"
+  },
+  {
+    "label": "Nintendo Switch",
+    "data": 6000,
+    "color": "EEAF57"
+  },
+  {
+    "label": "Nintendo DS",
+    "data": 1000,
+    "color": "6BCB77"
+  },
+  {
+    "label": "PS4 Pro",
+    "data": 2000,
+    "color": "F473B9"
+  }
+]
+

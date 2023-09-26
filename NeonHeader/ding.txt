@@ -1,0 +1,3 @@
+Je gebruikt de kleuren cirkel om te roteren van kleur op een soepele manier. Dit doe je door animaties te gebruiken in css.
+
+De kleuren rotation vond ik ook het leukst om te leren omdat ik er nog niet eerder van gehoord had. Weer is wat nieuws : )

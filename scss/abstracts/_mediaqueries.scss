@@ -193,18 +193,40 @@
 
 // queries MODAL
 
+@media only screen and (max-width: 62.375rem){
+    .section1Modal__top{
+        display: none;
+
+        &__img{
+            display: none;
+        }
+    }
+}
 
 @media only screen and (max-width: 52.3125rem) {
     .sectionModal__img {
         width: 10rem;
         height: 10rem;
     }
+
+    .section2Modal__bottom__h3{
+        text-align: center;
+    }
+
+    .sectionModal__img--container{
+        padding-top: 2rem;
+      
+        &--3plus{
+          max-width: 20rem;
+        }
+      }
 }
 
 
-@media only screen and (max-width: 38.375) {
+@media only screen and (max-width: 38.375rem) {
     .section1Modal__bottom__socialIconsCover--img {
         width: 2rem;
         height: 2rem;
     }
+
 }

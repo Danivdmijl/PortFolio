@@ -24,7 +24,6 @@ var openModalButtons = document.querySelectorAll('.open-modal-btn');
 // Add click event listeners to open the modals
 openModalButtons.forEach(function(button) {
     button.addEventListener('click', function() {
-        // Get the modal id from the data-modal-id attribute
         var modalId = button.getAttribute('data-modal-id');
         var modal = document.getElementById(modalId);
         if (modal) {
@@ -33,7 +32,6 @@ openModalButtons.forEach(function(button) {
     });
 });
 
-// Get all the close buttons within modals
 var closeButtons = document.querySelectorAll('.close');
 
 // Add click event listeners to close the modals

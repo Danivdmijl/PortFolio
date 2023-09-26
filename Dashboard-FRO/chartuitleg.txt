@@ -1,0 +1,51 @@
+
+
+
+De labels worden in een array gezet.
+
+const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+
+
+In de data word er in de labels gekeken en haalt deze op.
+label: is voor de naam bovenin
+backgroundcolor is de kleur van de lein.
+bordecolor voor de kleur van de punten.
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+
+In de config word de date opgehaald met de key en word er gekeken in wat voor soort grafiek achtig iets hij het moet zetten
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+
+
+
+Hier word de grafiek opgehaald
+
+const myChart = new Chart(
+    document.getElementById('js--chart--1'),
+    config
+);
+
+
+
