@@ -75,6 +75,10 @@
     .aboutme {
         padding-bottom: 40rem;
     }
+
+    .contact-buttons{
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 45.625rem) {
@@ -143,6 +147,12 @@
             align-items: center;
             width: 100%;
         }
+    }
+}
+
+@media only screen and (max-width: 34.25rem){
+    .contact-buttons{
+         width: 60%;
     }
 }
 
@@ -230,3 +240,5 @@
     }
 
 }
+
+
