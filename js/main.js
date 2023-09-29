@@ -1,22 +1,4 @@
-// JavaScript for scroll-to-top button
-window.addEventListener('scroll', function() {
-    var scrollButton = document.querySelector('.scroll-button');
-    if (window.scrollY > 200) {
-        scrollButton.style.display = 'block';
-    } else {
-        scrollButton.style.display = 'none';
-    }
-});
 
-// Smooth scroll animation when button is clicked
-var scrollButton = document.querySelector('.scroll-button');
-scrollButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
 
 // Get all the "View Project" buttons
 var openModalButtons = document.querySelectorAll('.open-modal-btn');
@@ -31,6 +13,7 @@ openModalButtons.forEach(function(button) {
         }
     });
 });
+
 
 var closeButtons = document.querySelectorAll('.close');
 
@@ -52,5 +35,51 @@ window.addEventListener('click', function(event) {
         if (modal && event.target == modal) {
             modal.style.display = "none";
         }
+    });
+});
+
+
+
+const linkdinIMGs = document.querySelectorAll('.linkdin--button');
+
+const linkdinURL = "https://www.linkedin.com/in/dani-van-der-mijl-163246232/";
+
+linkdinIMGs.forEach(function(linkdinIMG) {
+    linkdinIMG.addEventListener('click', function() {
+        window.open(linkdinURL, '_blank');
+    });
+});
+
+
+const githubIMGs = document.querySelectorAll('.github--button');
+
+const githubURL = "https://github.com/yourusername"; //
+
+githubIMGs.forEach(function(githubIMG) {
+    githubIMG.addEventListener('click', function() {
+        window.open(githubURL, '_blank');
+    });
+});
+
+
+
+
+// JavaScript for scroll-to-top button
+window.addEventListener('scroll', function() {
+    var scrollButton = document.querySelector('.scroll-button');
+    if (window.scrollY > 200) {
+        scrollButton.style.display = 'block';
+    } else {
+        scrollButton.style.display = 'none';
+    }
+});
+
+// Smooth scroll animation when button is clicked
+var scrollButton = document.querySelector('.scroll-button');
+scrollButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 });

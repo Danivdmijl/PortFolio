@@ -86,6 +86,12 @@
         &--img{
           max-width: 10rem;
           max-height: 10rem;
+          transition: transform 0.3s ease;
+
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+          }
         }
       }
     }

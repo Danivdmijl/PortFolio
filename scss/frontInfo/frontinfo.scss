@@ -1,9 +1,11 @@
 .frontinfo{
-    height: 86vh;
+    height: 100%;
     width: 93%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 15.5rem;
+    padding-bottom: 17.9rem;
 
     &__container{
         display: flex;
