@@ -1,0 +1,77 @@
+@use "../abstracts/variables";
+
+.containerPakketen{
+    width: 68.5%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.titlePakketen{
+    padding-bottom: 1.5rem;
+    margin-top: 7rem;
+    width: 68.5%;
+    height: auto;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.4rem;
+}
+
+.pakketen{
+    margin-bottom: 10rem;
+    height: auto;
+    width: 24rem;
+
+    &__img{
+        margin-bottom: 0.5rem;
+    }
+
+    &__title{
+        color: variables.$donkerzwart;
+        font-weight: 800;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__name{
+        color: #6a6f73;
+        white-space: normal;
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    &__raiting{
+        color: rgb(163, 117, 31);
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+    }
+
+    &__div{
+        display: flex;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        gap: 0.8rem;
+    }
+
+    &__prijsnu{
+        color: variables.$donkerzwart;
+        font-weight: 700;
+        font-size: 1.55rem;
+    }
+
+    &__prijskorting{
+        color: #6a6f73;
+        font-weight: 400;
+        font-size: 1.45rem;
+        line-height: 1.55rem;
+        text-decoration: line-through;
+    }
+}

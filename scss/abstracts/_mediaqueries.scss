@@ -71,6 +71,7 @@
 
     .card {
         width: 40rem;
+        height: 55rem;
     }
 
     .projects,
@@ -85,7 +86,7 @@
     }
 
     .contact-buttons{
-        width: 40%;
+        width: 60%;
     }
 
     .myskills{
@@ -165,7 +166,7 @@
 
 @media only screen and (max-width: 36.25rem){
     .contact-buttons{
-         width: 60%;
+         width: 100%;
     }
 
     .myskills{
@@ -240,8 +241,8 @@
     }
     
     .sectionModal__img {
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
     }
 
     .section2Modal__bottom__h3{
@@ -286,5 +287,13 @@
 
     .section2Modal__bottom__h3{
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 29.5rem){
+
+    .sectionModal__img {
+        width: 5rem;
+        height: 5rem;
     }
 }

@@ -164,6 +164,9 @@ main {
   justify-content: center;
   gap: 2rem;
 }
+.myskills__right__h2 {
+  text-align: center;
+}
 .myskills__right__container {
   list-style: none;
   display: flex;
@@ -208,6 +211,7 @@ main {
 
 .card {
   width: 60rem;
+  height: 65rem;
   padding: 2rem;
   background-color: #f1f1f1;
   border-radius: 1rem;
@@ -230,9 +234,12 @@ main {
 }
 
 .card-description {
+  display: flex;
+  align-items: center;
   font-size: 1.6rem;
   color: #555;
   margin-bottom: 2rem;
+  height: 14rem;
 }
 
 .card-image {
@@ -592,6 +599,7 @@ main {
   }
   .card {
     width: 40rem;
+    height: 55rem;
   }
   .projects,
 .projects__container {
@@ -603,7 +611,7 @@ main {
     padding-bottom: 40rem;
   }
   .contact-buttons {
-    width: 40%;
+    width: 60%;
   }
   .myskills {
     padding-top: 50rem;
@@ -659,7 +667,7 @@ main {
 }
 @media only screen and (max-width: 36.25rem) {
   .contact-buttons {
-    width: 60%;
+    width: 100%;
   }
   .myskills {
     padding-top: 70rem;
@@ -714,8 +722,8 @@ main {
     height: 110%;
   }
   .sectionModal__img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
   .section2Modal__bottom__h3 {
     text-align: center;
@@ -752,6 +760,12 @@ main {
   }
   .section2Modal__bottom__h3 {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 29.5rem) {
+  .sectionModal__img {
+    width: 5rem;
+    height: 5rem;
   }
 }
 

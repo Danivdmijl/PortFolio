@@ -1,43 +1,44 @@
-
-
-// Get all the "View Project" buttons
 var openModalButtons = document.querySelectorAll('.open-modal-btn');
 
-// Add click event listeners to open the modals
-openModalButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        var modalId = button.getAttribute('data-modal-id');
-        var modal = document.getElementById(modalId);
-        if (modal) {
-            modal.style.display = "block";
-        }
-    });
-});
+        // Add click event listeners to open the modals
+        openModalButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var modalId = button.getAttribute('data-modal-id');
+                var modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                } else {
+                    console.error("Modal not found for ID: " + modalId);
+                }
+            });
+        });
 
+        // Get all the close buttons
+        var closeButtons = document.querySelectorAll('.close');
 
-var closeButtons = document.querySelectorAll('.close');
+        // Add click event listeners to close the modals
+        closeButtons.forEach(function(closeButton) {
+            closeButton.addEventListener('click', function() {
+                var modalId = closeButton.getAttribute('data-modal-id');
+                var modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "none";
+                } else {
+                    console.error("Modal not found for ID: " + modalId);
+                }
+            });
+        });
 
-// Add click event listeners to close the modals
-closeButtons.forEach(function(closeButton) {
-    closeButton.addEventListener('click', function() {
-        var modal = closeButton.parentElement;
-        if (modal) {
-            modal.style.display = "none";
-        }
-    });
-});
-
-// When the user clicks anywhere outside of a modal, close it
-window.addEventListener('click', function(event) {
-    openModalButtons.forEach(function(button) {
-        var modalId = button.getAttribute('data-modal-id');
-        var modal = document.getElementById(modalId);
-        if (modal && event.target == modal) {
-            modal.style.display = "none";
-        }
-    });
-});
-
+        // When the user clicks anywhere outside of a modal, close it
+        window.addEventListener('click', function(event) {
+            openModalButtons.forEach(function(button) {
+                var modalId = button.getAttribute('data-modal-id');
+                var modal = document.getElementById(modalId);
+                if (modal && event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
 
 
 const linkdinIMGs = document.querySelectorAll('.linkdin--button');
@@ -53,13 +54,27 @@ linkdinIMGs.forEach(function(linkdinIMG) {
 
 const githubIMGs = document.querySelectorAll('.github--button');
 
-const githubURL = "https://github.com/yourusername"; //
+var githubURLs = [
+    "https://github.com/Danivdmijl/Succes-Dagboek",
+    "https://github.com/Danivdmijl/Cookie",
+    "https://github.com/Danivdmijl/Kanao-s-Coin-Flip",
+    "https://github.com/Danivdmijl/ColorPicker",
+    "https://github.com/Danivdmijl/Banky",
+    "https://github.com/IanSchaafsma/BO-Museum_Online",
+    "https://github.com/Danivdmijl/Jeroenzeles/tree/main/Eindopdracht",
+    "https://github.com/Danivdmijl/Game-Algoritme",
+    "https://github.com/Danivdmijl/FE-BO/tree/main/facyding",
+    "https://github.com/Danivdmijl/F2M3FRO/tree/main/Dashboard-FRO",
+    "https://github.com/Danivdmijl/Drakuze",
+    "https://github.com/Danivdmijl/CSS-Art-Flex/tree/main/Post%20its"
+];
 
-githubIMGs.forEach(function(githubIMG) {
-    githubIMG.addEventListener('click', function() {
-        window.open(githubURL, '_blank');
+githubIMGs.forEach(function(githubIMG, index) {
+    githubIMG.addEventListener('click', function () {
+        window.open(githubURLs[index], '_blank');
     });
 });
+
 
 
 

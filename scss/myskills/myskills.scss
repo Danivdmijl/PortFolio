@@ -47,6 +47,10 @@
         justify-content: center;
         gap: 2rem;
 
+        &__h2{
+            text-align: center;
+        }
+
         &__container{
             list-style: none;
             display: flex;

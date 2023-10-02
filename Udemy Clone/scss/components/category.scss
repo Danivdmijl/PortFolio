@@ -1,0 +1,79 @@
+@use "../abstracts/variables";
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+    height: 100%;
+    background: variables.$backgrounddarker;
+    
+    &__article{
+        display: flex;
+        gap: 19.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__title{
+        height: auto;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: 2.4rem;
+        padding-top: 6.4rem;
+        text-align: center;
+    }
+
+    &__containerOptions{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        padding-top: 3.4rem;
+        flex-wrap: wrap;
+    }
+
+    &__options--dik{
+        margin-bottom: 1.5rem;
+    }
+
+    &__options{
+        font-size: 1.6rem;
+        font-weight: 800;
+        text-decoration: underline;
+        color: #5624d0;
+    }
+
+    &__p{
+        font-size: 1.5rem;
+        color: #6a6f73;
+        font-weight: 700;
+    }
+    
+    &__p:hover{
+        cursor: pointer;
+    }
+
+    &__button{
+        color: variables.$donkerzwart;
+        background-color: transparent;
+        border: 0.1rem solid variables.$donkerzwart;
+        height: 4rem;
+        width: auto;
+        display: inline-flex;
+        padding: 1rem;
+        justify-content: center;
+        vertical-align: bottom;
+        align-items: center;
+        margin-top: 4rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+    }
+
+    &__button:hover{
+        cursor: pointer;
+    }
+}
