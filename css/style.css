@@ -274,12 +274,13 @@ main {
 }
 
 .card-description {
-  display: flex;
-  align-items: center;
   font-size: 1.6rem;
   color: #555;
   margin-bottom: 2rem;
   height: 14rem;
+}
+.card-description__a {
+  color: #868686;
 }
 
 .card-image {

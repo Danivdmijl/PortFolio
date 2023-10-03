@@ -1,6 +1,5 @@
 var openModalButtons = document.querySelectorAll('.open-modal-btn');
 
-// Add click event listeners to open the modals
 openModalButtons.forEach(function (button) {
     button.addEventListener('click', function () {
         var modalId = button.getAttribute('data-modal-id');
@@ -13,10 +12,8 @@ openModalButtons.forEach(function (button) {
     });
 });
 
-// Get all the close buttons
 var closeButtons = document.querySelectorAll('.close');
 
-// Add click event listeners to close the modals
 closeButtons.forEach(function (closeButton) {
     closeButton.addEventListener('click', function () {
         var modalId = closeButton.getAttribute('data-modal-id');
@@ -29,7 +26,6 @@ closeButtons.forEach(function (closeButton) {
     });
 });
 
-// When the user clicks anywhere outside of a modal, close it
 window.addEventListener('click', function (event) {
     openModalButtons.forEach(function (button) {
         var modalId = button.getAttribute('data-modal-id');
@@ -82,9 +78,8 @@ githubIMGs.forEach(function (githubIMG, index) {
 
 
 
-// JavaScript for scroll-to-top button
 var scrollButton = document.querySelector('.scroll-button');
-scrollButton.style.display = 'none'; // Start with the button hidden
+scrollButton.style.display = 'none'; 
 
 window.addEventListener('scroll', function () {
     if (window.scrollY > 200) {
@@ -94,7 +89,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Smooth scroll animation when button is clicked
 scrollButton.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({
@@ -102,3 +96,13 @@ scrollButton.addEventListener('click', function (e) {
         behavior: 'smooth'
     });
 });
+
+
+document.addEventListener('mousemove', e => {
+	Object.assign(document.documentElement, {
+		style: `
+		--move-x: ${(e.clientX - window.innerWidth / 2) * -.005}deg;
+		--move-y: ${(e.clientY - window.innerHeight / 2) * .01}deg;
+		`
+	})
+})
