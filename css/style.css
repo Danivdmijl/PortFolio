@@ -108,6 +108,9 @@ main {
   animation-fill-mode: backwards;
   animation-delay: 2.1s;
 }
+.frontinfo__icon:hover {
+  cursor: pointer;
+}
 
 @keyframes popup {
   from {
