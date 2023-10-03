@@ -16,10 +16,18 @@
 
         &__h2{
             font-size: 700%;
+            animation-name: popup;
+            animation-duration: 0.8s;
+            animation-fill-mode: backwards;
+            animation-delay: 0.75s;
         }
 
         &__p{
             font-size: 200%;
+            animation-name: popup;
+            animation-duration: 0.8s;
+            animation-fill-mode: backwards;
+            animation-delay: 1.8s;
         }
     }
 
@@ -31,5 +39,21 @@
         border: dashed 0.5rem black;
         border-radius: 50%;
         object-fit: cover;
+        animation-name: popup;
+        animation-duration: 0.8s;
+        animation-fill-mode: backwards;
+        animation-delay: 2.1s;
+    }
+}
+
+
+@keyframes popup {
+    from{
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0rem);
+        opacity: 1;
     }
 }
