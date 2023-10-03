@@ -2,7 +2,7 @@
 
 Welkom bij mijn portfolio je zal hier meer over mij te weten komen en zien welke skills ik beheers!
 
-[www.danivandermij.nl](www.danivandermijl.nl)
+[www.danivandermijl.nl](https://danivandermijl.nl/)
 
 ## Contactgegevens
 
