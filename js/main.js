@@ -16,12 +16,9 @@ var closeButtons = document.querySelectorAll('.close');
 
 closeButtons.forEach(function (closeButton) {
     closeButton.addEventListener('click', function () {
-        var modalId = closeButton.getAttribute('data-modal-id');
-        var modal = document.getElementById(modalId);
+        var modal = closeButton.closest('.modal');
         if (modal) {
             modal.style.display = "none";
-        } else {
-            console.error("Modal not found for ID: " + modalId);
         }
     });
 });
@@ -35,6 +32,7 @@ window.addEventListener('click', function (event) {
         }
     });
 });
+
 
 const linkdinIMGs = document.querySelectorAll('.linkdin--button');
 const BigPic = document.getElementById("js--bigpicture");
@@ -81,13 +79,19 @@ githubIMGs.forEach(function (githubIMG, index) {
 var scrollButton = document.querySelector('.scroll-button');
 scrollButton.style.display = 'none'; 
 
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 200) {
-        scrollButton.style.display = 'block';
+function handleScroll() {
+    if (window.innerWidth >= 1153) { 
+        if (window.scrollY > 200) {
+            scrollButton.style.display = 'block';
+        } else {
+            scrollButton.style.display = 'none';
+        }
     } else {
         scrollButton.style.display = 'none';
     }
-});
+}
+
+window.addEventListener('scroll', handleScroll);
 
 scrollButton.addEventListener('click', function (e) {
     e.preventDefault();
@@ -97,12 +101,13 @@ scrollButton.addEventListener('click', function (e) {
     });
 });
 
-
 document.addEventListener('mousemove', e => {
 	Object.assign(document.documentElement, {
 		style: `
 		--move-x: ${(e.clientX - window.innerWidth / 2) * -.005}deg;
 		--move-y: ${(e.clientY - window.innerHeight / 2) * .01}deg;
 		`
-	})
-})
+	});
+});
+
+handleScroll();

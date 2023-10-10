@@ -2,6 +2,7 @@
 @use "../aboutme/aboutme.scss";
 @use "../modal/modal.scss";
 @use "../myskills/myskills.scss";
+@use "../ScrollButton/scrollbutton.scss";
 
 @media only screen and (max-width: 84.375rem) {
 
@@ -56,6 +57,23 @@
 
     .contact-buttons{
         width: 60%;
+    }
+
+    .scroll-button{
+      display: none;
+    
+        &:hover{
+            background-color: #e7618e;
+            transform: scale(1.1);
+        }
+    
+        &i{
+            display: none;
+        }
+    
+        &i::before{
+            content: "\2191";
+        }
     }
 }
 

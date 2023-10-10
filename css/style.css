@@ -641,13 +641,26 @@ main {
     height: 55rem;
   }
   .projects,
-.projects__container {
+  .projects__container {
     gap: 3rem;
   }
 }
 @media only screen and (max-width: 66.5625rem) {
   .contact-buttons {
     width: 60%;
+  }
+  .scroll-button {
+    display: none;
+  }
+  .scroll-button:hover {
+    background-color: #e7618e;
+    transform: scale(1.1);
+  }
+  .scroll-buttoni {
+    display: none;
+  }
+  .scroll-buttoni::before {
+    content: "↑";
   }
 }
 @media only screen and (max-width: 45.625rem) {
