@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   gap: 7rem;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -22,7 +21,7 @@
 }
 
 .card {
-  width: 60rem;
+  max-width: 60rem;
   height: 65rem;
   padding: 2rem;
   background-color: #f1f1f1;
@@ -67,10 +66,10 @@
 }
 
 .card-description {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #555;
   margin-bottom: 2rem;
-  height: 14rem;
+  height: 100%;
 
   &__a{
     color:#868686 ;
