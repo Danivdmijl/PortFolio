@@ -280,7 +280,7 @@ main {
 }
 
 .card-description {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #555;
   margin-bottom: 2rem;
   height: 100%;
@@ -610,6 +610,9 @@ main {
   .frontinfo__container__h2 {
     font-size: 300%;
   }
+  .card-description {
+    font-size: 1.3rem;
+  }
   .contact {
     margin-top: 30rem;
     width: 100%;
@@ -640,7 +643,7 @@ main {
     height: 55rem;
   }
   .projects,
-  .projects__container {
+.projects__container {
     gap: 3rem;
   }
 }
@@ -681,6 +684,7 @@ main {
 @media only screen and (max-width: 35.25rem) {
   .frontinfo {
     flex-direction: column;
+    padding-top: 6.5rem;
   }
   .frontinfo__container {
     justify-content: center;
