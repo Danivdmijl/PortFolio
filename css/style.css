@@ -643,13 +643,13 @@ main {
     height: 55rem;
   }
   .projects,
-.projects__container {
+  .projects__container {
     gap: 3rem;
   }
 }
 @media only screen and (max-width: 66.5625rem) {
   .contact-buttons {
-    width: 70%;
+    width: 95%;
   }
   .scroll-button {
     display: none;
