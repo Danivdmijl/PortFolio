@@ -71,7 +71,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 15.5rem;
+  padding-top: 8rem;
   padding-bottom: 17.9rem;
 }
 .frontinfo__container {
@@ -82,7 +82,7 @@ main {
   gap: 2rem;
 }
 .frontinfo__container__h2 {
-  font-size: 700%;
+  font-size: 500%;
   animation-name: popup;
   animation-duration: 0.8s;
   animation-fill-mode: backwards;
@@ -612,7 +612,7 @@ main {
     height: 55rem;
   }
   .projects,
-  .projects__container {
+.projects__container {
     gap: 3rem;
   }
 }
