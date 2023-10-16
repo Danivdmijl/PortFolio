@@ -1,4 +1,5 @@
 var openModalButtons = document.querySelectorAll('.open-modal-btn');
+var body = document.body;
 
 openModalButtons.forEach(function (button) {
     button.addEventListener('click', function () {
@@ -6,6 +7,7 @@ openModalButtons.forEach(function (button) {
         var modal = document.getElementById(modalId);
         if (modal) {
             modal.style.display = "block";
+            body.style.overflow = "hidden"; // Disable body scrolling
         } else {
             console.error("Modal not found for ID: " + modalId);
         }
@@ -19,6 +21,7 @@ closeButtons.forEach(function (closeButton) {
         var modal = closeButton.closest('.modal');
         if (modal) {
             modal.style.display = "none";
+            body.style.overflow = "auto"; // Re-enable body scrolling
         }
     });
 });
@@ -29,9 +32,11 @@ window.addEventListener('click', function (event) {
         var modal = document.getElementById(modalId);
         if (modal && event.target === modal) {
             modal.style.display = "none";
+            body.style.overflow = "auto"; // Re-enable body scrolling
         }
     });
 });
+
 
 
 const linkdinIMGs = document.querySelectorAll('.linkdin--button');
