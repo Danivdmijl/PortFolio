@@ -27,13 +27,13 @@
 
             &__button{
                 display: inline-block;
-                padding: 10px 20px;
+                padding: 1rem 2rem;
                 background-color: #e7618e;
                 color: white;
                 text-align: center;
                 text-decoration: none;
                 font-size: 20px;
-                width: 10rem;
+                min-width: 10rem;
                 border: none;
                 border-radius: 50px;
                 position: relative;
